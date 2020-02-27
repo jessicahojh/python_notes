@@ -27,7 +27,7 @@ class Node(object):
             current = to_visit.pop()
 
             if current.data == data:
-                return current
+                return current.data
 
             to_visit.extend(current.children)
 
@@ -53,8 +53,7 @@ food.add_to_tree('mexican', 'burritos')
 print(food.find_using_BFS('burritos'))
 
     # Advantages:
-    # Depth-first search on a binary tree generally requires less memory than breadth
-    # -first.
+    # Depth-first search on a binary tree generally requires less memory than breadth-first.
     # Depth-first search can be easily implemented with recursion.
 
     # Disadvantages
